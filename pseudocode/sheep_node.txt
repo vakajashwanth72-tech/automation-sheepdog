@@ -1,0 +1,8 @@
+loop:
+    if distance(sheep, sheepdog) < threshold:
+        move directly away from sheepdog
+    else:
+        remain stationary
+
+    if x_position > safe_zone_x:
+        despawn
