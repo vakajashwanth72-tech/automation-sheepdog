@@ -1,0 +1,10 @@
+loop:
+    read sheep positions
+    remove sheep inside safe zone
+
+    if no sheep remain:
+        stop
+
+    target = nearest sheep
+    compute herding point behind sheep
+    move toward herding point
