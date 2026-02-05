@@ -1,0 +1,12 @@
+Nodes:
+- sheep_node: controls sheep behavior and fear response
+- sheepdog_node: autonomous controller
+
+Topics:
+- /sheep_positions (custom message)
+- /cmd_vel (velocity control)
+
+Workflow:
+Sheep publish positions → Sheepdog subscribes →
+Selects target sheep → Computes herding point →
+Moves autonomously
